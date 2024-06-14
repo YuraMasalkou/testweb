@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>EMS Double</title>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,100;0,400;0,500;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,100;0,400;0,500;1,100&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adaptiv.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../работа/test_/styles/style.css">
 </head>
 <body>
 
@@ -40,7 +42,46 @@
         </div>
     </div>
 </section>
+<div class="callback-open-form form-active" id="callform">
+    <form class="form form-open" id="form">
+        <div class="callback-thank-text">
+            <div class="form-close">
+                ×
+            </div>
+            <h2 class="form-title">Войти в систему</h2>
+            <div class="inputs">
 
+                <label class="black-text" for="mail"> <input id="mail"
+                                                             class="form-input"
+                                                             name="mail"
+                                                             placeholder="Email/Телефон" required/>
+
+                </label>
+
+                <label class="black-text" for="pass"><input id="pass"
+                                                            class="form-input"
+                                                            name="pass"
+                                                            placeholder="Пароль" required
+                />
+                </label>
+
+            </div>
+            <label class="checkbox" for="remember"><input name="checkbox-example" type="checkbox"
+                                                          id="remember"
+            >
+                <span class="custom-checkbox"></span>
+
+                <span class="policy-link">Запомнить пароль</span>
+            </label>
+
+            <a href="#" class="restore"> Восстановить</a>
+            <div class="form__buttons">
+                <button class="btn btn-form btn_signin" id="btn_signin" type="submit">Войти</button>
+                <button class="btn btn-form btn_signup" id="btn_signup" type="submit">Зарегестрироваться</button>
+            </div>
+        </div>
+    </form>
+</div>
 <script src="js/main.js"></script>
 </body>
 </html>

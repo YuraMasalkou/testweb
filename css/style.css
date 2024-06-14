@@ -62,7 +62,7 @@ body {
     line-height: 28.8px;
     text-align: left;
     background: #244C98;
-    border: none;
+    border: 1px solid #244C98;
     cursor: pointer;
 }
 
@@ -75,7 +75,7 @@ body {
     border-radius: 60px;
 }
 
-.content__btn span{
+.content__btn span {
     font-size: 18px;
     font-weight: 500;
     line-height: 28.8px;
@@ -99,4 +99,153 @@ body {
     border-radius: 0 10px 10px 0;
 }
 
+.callback-open-form {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.form-open {
+    position: fixed;
+    width: 500px;
+    border-radius: 10px;
+    background: #F0F4FC;
+    padding: 24px;
+}
+
+.form-close {
+    background: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: calc(100% - 40px);
+}
+
+.form-title {
+    color: #323232;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32.78px;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.inputs label {
+    width: 100%;
+}
+
+.form-input {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 24px;
+    background: #D7E2F6;
+    color: #1F4284;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.59px;
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #1F4284;
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid #323232;
+    border-radius: 5px;
+
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+    content: "✔";
+    position: absolute;
+    top: -2px;
+    right: 2px;
+    color: #1F4284;
+    font-size: 18px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 24px 0;
+    cursor: pointer;
+}
+
+.policy-link {
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.59px;
+    text-align: left;
+    color: #323232;
+}
+
+.restore{
+    color: #244C98;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27.32px;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.form__buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 36px;
+}
+.btn-form{
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    padding: 18px 0;
+}
+
+.btn_signup{
+    color:#244C98;
+    border: 1px solid #244C98;
+    background: transparent;
+}
+.form-active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
